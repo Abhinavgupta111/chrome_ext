@@ -1,0 +1,19 @@
+.phishhawk-banner-container {
+    color: white;
+    margin: 10px 0;
+    width: 100%;
+    z-index: 9999;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.high-risk-banner {
+    background: linear-gradient(90deg, #d32f2f, #c62828);
+}
+
+.medium-risk-banner {
+    background: linear-gradient(90deg, #f57c00, #ef6c00);
+}
+
+.low-risk-banner {
+    background: linear-gradient(90deg, #388e3c, #2e7d32);
+}

@@ -1,0 +1,52 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.6s ease-out;
+}
+
+:root {
+  /* Light, bright default theme */
+  color-scheme: light;
+
+  /* Core layout tokens */
+  --bg-color: #f5f7ff;
+  --card-bg: #ffffff;
+
+  /* Brand accents (blue / purple) */
+  --primary-color: #4f46e5;
+  --secondary-color: #7c3aed;
+
+  /* Typography */
+  --text-color: #020617;
+  --muted-text: #6b7280;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  /* Light SaaS-style background */
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Inter',
+    'SF Pro Text', ui-sans-serif, sans-serif;
+}

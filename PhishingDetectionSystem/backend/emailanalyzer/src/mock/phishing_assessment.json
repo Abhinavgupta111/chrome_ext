@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-02-12T16:14:50.334028",
+  "assessment": {
+    "overall_score": 8.5,
+    "risk_level": "CRITICAL",
+    "component_scores": {
+      "metadata_score": 15,
+      "url_score": 10,
+      "ip_score": 15,
+      "ai_score": 0
+    },
+    "details": {
+      "ai_detected_phishing": false,
+      "header_mismatch": false,
+      "domain_mismatch": false,
+      "originating_ip": "2a01:111:e400:7e0a::50",
+      "total_ips_found": 8,
+      "urls_found": 3
+    }
+  }
+}

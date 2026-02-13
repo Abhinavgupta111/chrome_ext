@@ -1,0 +1,8 @@
+flask
+flask-cors
+dnspython
+transformers
+torch
+scipy
+numpy
+waitress

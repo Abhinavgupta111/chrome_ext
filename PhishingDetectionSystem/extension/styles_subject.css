@@ -1,0 +1,16 @@
+.analyzed-subject-container {
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 13px;
+    color: #495057;
+    border-left: 4px solid #ced4da;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.analyzed-subject-container strong {
+    color: #212529;
+}
